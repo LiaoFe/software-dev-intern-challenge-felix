@@ -36,8 +36,6 @@ const THRESHOLD_OPEN = Math.PI / 4; // 45 degrees
 //                  of a second point
 // return: non-negative integer distance of point (x1, y1) and (x2, y2)
 const dist = (x1: number, y1: number, x2: number, y2: number): number => {
-  // console.log(`**** dist1: ${(x1 - x2) ** 2} ****`);
-  // console.log(`**** dist1: ${(y1 - y2) ** 2} ****`);
   return Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2);
 };
 
