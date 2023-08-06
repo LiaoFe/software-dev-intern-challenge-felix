@@ -30,3 +30,5 @@ Besides these examples, there are a lot of other cases how the data could be col
 1. What would be the other different orientations/cases that are possible?
 2. How would you update your algorithm (if you need to) for these new cases in (1)
 3. For testing purposes, if you had to generate frames data, how would you go about it?
+
+RESPONSES TO QUESTIONS IN src/questionsThoughtsAndJustifications.txt
