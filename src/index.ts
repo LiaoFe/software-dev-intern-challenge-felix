@@ -58,7 +58,7 @@ const calculateOpenings = (frames: Frame[]): number => {
 
   // determine start position (open or closed)?
   var isOpen: boolean = false;
-  var firstIt: boolean = true;
+  var firstIteration: boolean = true;
 
   // iterate through frames array
   frames.forEach((frame) => {
@@ -70,10 +70,10 @@ const calculateOpenings = (frames: Frame[]): number => {
     // determine angle in radians
     var angle = cosineLaw(lenA, lenB, lenC);
 
-    if (firstIt) {
+    if (firstIteration) {
       if (angle <= THRESHOLD_CLOSED) isOpen = false;
       if (angle >= THRESHOLD_OPEN) isOpen = true;
-      firstIt = false;
+      firstIteration = false;
     } else if (isOpen && angle <= THRESHOLD_CLOSED) {
       isOpen = false;
       closings++;
